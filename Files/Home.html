@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=outline">
+  <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+  <div class="topnav">
+
+    <img src="/yummy/images/Yummy-logo.jpeg">
+    <h2 class ="font-effect-outline">YUMMY</h2>
+    <a href="Home.html">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Reciepes
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Veg Reciepes</a>
+        <a href="#">Non Veg Reciepes</a>
+        <a href="snacks.html">Snacks</a>
+        <a href="juices.html">Juices</a>
+      </div>
+    </div>
+    <a  href="login.html" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+    <a href="about.html">About</a>
+    <a href="contact us.html">Contact us</a>
+  </div>
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="/yummy/images/food10.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/yummy/images/food2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/yummy/images/food4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/yummy/images/food5.jfif" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="/yummy/images/food9.png" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+
+
+  <section class="gallery" id="gallery">
+    <div>
+<h1 class="heading"> Our Popular Reciepes</h1>
+</div>
+<div class="box-container">
+<div class="box">
+  <img src="/yummy/images/paneer butter masala.jpg" alt="Avatar" style="width:300px;height:300px;">
+  <div class="content">
+      <h3>tasty food</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+
+  </div>
+</div>
+<div class="box">
+      <img src="/yummy/images/Non veg.jpg" alt="Avatar" style="width:300px;height:300px;">
+      <div class="content">
+          <h3>tasty food</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+
+      </div>
+    </div>
+  <div class="box">
+    <img src="/yummy/images/burger.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <div class="content">
+        <h3>tasty food</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+
+    </div>
+    </div>
+  <div class="box">
+      <img src="/yummy/images/juices/carrot juice.jpg" alt="Avatar" style="width:300px;height:300px;">
+      <div class="content">
+          <h3>tasty food</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="footer">
+  <h2>Yummy Reciepes</h2>
+  <p>&copy; All Rights are Reserved. 2021</p>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
