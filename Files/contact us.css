@@ -166,41 +166,49 @@ body {
 /* Footer */
 .footer {
   padding: 20px;
-  text-align: center;
   background: black;
   color:white;
   margin-top: 20px;
 }
+.footer h2,p{
+  text-align: center;
+}
+.himaja-items{
 
+margin-left:350px;
+}
+.social-items{
+  list-style: none;
+  padding:10px 20px;
+}
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {
     width: 100%;
     padding: 0;
   }
+
 }
 
+
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .topnav a {
     float: none;
     width: 100%;
   }
 }
 @media screen and (max-width: 800px) {
-  .text h2
-  {
-    font-size:30px;
-  }
-  .text
-  {
-    font-size:15px;
-  }
-  }
+.himaja-items{
+  margin:5px;
+}
+}
+
+
 
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width:768px) {
   .text h2
   {
     font-size:30px;
@@ -208,6 +216,9 @@ body {
   .text
   {
     font-size:15px;
+  }
+
+
   }
 
 }
