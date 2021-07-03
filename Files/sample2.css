@@ -1,0 +1,135 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+}
+body p {
+  font-size: 14px;
+  line-height: 23px;
+}
+body li {
+  font-size: 14px;
+}
+h3 {
+  margin-left: 15px;
+}
+h4{
+  margin-left:20px;
+}
+.wrapper {
+  padding-top: 25px;
+}
+
+.img {
+ background-image: url('/yummy/images/juices/pome-background.jpg');
+  image-rendering: auto;
+  width:70%;
+  min-height:500px;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+.title {
+  width:70%;
+  height:50px;
+  background-color:#3333cc;
+  color:white;
+  margin: auto;
+}
+.title h4 {
+  margin: 0px;
+  padding-top: 7px;
+  padding-left: 30px;
+  font-size:3rem;
+  font-weight:700;
+  text-align:center;
+}
+ul.tab {
+  list-style-type: none;
+  margin: auto;
+  padding: 0px 0px 40px 0px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width:70%;
+  height: 55px;
+}
+ul.tab li {
+  float:left;
+}
+ul.tab li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+ul.tab li a:focus, .active {
+  background-color: #ccc;
+}
+ul.tab li a:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  background-color: white;
+  border-top: none;
+  width:70%;
+  margin: auto;
+}
+.tabcontent li {
+  list-style-type: none;
+  line-height: 23px;
+}
+.tabcontent p {
+  margin: 20px;
+}
+
+@media screen and (max-width: 992px) {
+
+  .img
+  {
+    width:55%;
+    height:500px;
+  }
+  .title{
+    width:55%;
+  }
+.title h4{
+  font-size:2rem;
+
+}
+ul.tab{
+  width:55%;
+}
+.tabcontent p{
+  margin:40px;
+}
+.tabcontent h3{
+  margin:40px;
+}
+.tabcontent h4
+{
+  margin:45px;
+}
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  .img
+  {
+    width:400px;
+    height:500px;
+  }
+.title{
+  width:400px;
+}
+ul.tab{
+  width:400px;
+}
+.tabcontent p{
+  margin:30px;
+}
+}
