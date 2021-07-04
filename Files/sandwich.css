@@ -20,11 +20,12 @@ h4{
 }
 
 img {
-  width:70%;
+ display:block;
   max-width:100%;
-  display:block;
+  width:70%;
   margin-left:auto;
   margin-right:auto;
+
 }
 .title {
   width:70%;
@@ -96,6 +97,14 @@ ul.tab li a:hover {
 
 @media screen and (max-width: 992px) {
 
+/*  .img
+  {
+    width:55%;
+    height:500px;
+  }*/
+  .title{
+    width:70%;
+  }
 .title h4{
   font-size:2rem;
 
@@ -117,7 +126,14 @@ ul.tab{
 
 /* On screens that are 600px wide or less, the background color is olive */
 @media screen and (max-width: 600px) {
-
+/*  .img
+  {
+    width:400px;
+    height:500px;
+  }*/
+.title{
+  width:70%;
+}
 ul.tab{
   width:70%;
 }

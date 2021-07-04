@@ -20,16 +20,16 @@ h4{
 }
 
 img {
-  width:70%;
-  max-width:100%;
   display:block;
-  margin-left:auto;
-  margin-right:auto;
+  max-width:100%;
+  width:70%;
+ margin-left:auto;
+ margin-right:auto;
 }
 .title {
   width:70%;
   height:50px;
-  background-color:#e6005c;
+  background-color:#3333cc;
   color:white;
   margin: auto;
 }
@@ -38,7 +38,6 @@ img {
   padding-top: 7px;
   padding-left: 30px;
   font-size:3rem;
-  color:#ffcc00;
   font-weight:700;
   text-align:center;
 }
@@ -73,29 +72,29 @@ ul.tab li a:hover {
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  background-color:#dfbba1;
-  color:#6C4013;
+  background-color: white;
   border-top: none;
   width:70%;
   margin: auto;
 }
-.tabcontent ul li {
-  list-style-type:disc;
-  line-height: 23px;
-}
-.tabcontent ol li {
+.tabcontent li {
+  list-style-type: none;
   line-height: 23px;
 }
 .tabcontent p {
   margin: 20px;
 }
-.tabcontent h3,h4
-{
-  color:#ff7d00;
-}
 
 @media screen and (max-width: 992px) {
 
+/*img
+  {
+    width:55%;
+    height:500px;
+  }*/
+  .title{
+    width:70%;
+  }
 .title h4{
   font-size:2rem;
 
@@ -117,7 +116,14 @@ ul.tab{
 
 /* On screens that are 600px wide or less, the background color is olive */
 @media screen and (max-width: 600px) {
-
+  /*.img
+  {
+    width:400px;
+    height:500px;
+  }*/
+.title{
+  width:70%;
+}
 ul.tab{
   width:70%;
 }
